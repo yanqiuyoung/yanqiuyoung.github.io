@@ -51,3 +51,40 @@
     </table>
   </body>
 </html>
+
+<table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin:auto;"><tbody>
+
+  <tr onmouseout="biowatch_stop()" onmouseover="biowatch_start()" bgcolor="#ffffd0">
+    <td style="padding:16px;width:20%;vertical-align:middle">
+      <div class="one">
+        <div class="two" id="biowatch_video"><video width="100%" muted autoplay loop>
+          <source src="images/biowatch_demo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video></div>
+        <img src="images/biowatch_thumb.jpg" width="160">
+      </div>
+      <script type="text/javascript">
+        function biowatch_start() {
+          document.getElementById('biowatch_video').style.opacity = "1";
+        }
+        function biowatch_stop() {
+          document.getElementById('biowatch_video').style.opacity = "0";
+        }
+        biowatch_stop()
+      </script>
+    </td>
+  
+    <td style="padding:8px;width:80%;vertical-align:middle">
+      <span class="papertitle">bioWatch: Mobile Computer Vision for Spotted Lanternfly Detection</span><br>
+      <strong>Yanqiu Yang</strong><br>
+      <em>App Store</em>, 2024<br>
+      <a href="https://apps.apple.com/us/app/biowatch/id6480581494">app</a><br>
+      <p>
+        A mobile platform that uses YOLOv8 and real-time image classification to detect spotted lanternfly life stages and support citizen science for invasive pest management.
+        <br><br>
+        🏆 Awarded <strong>1st Place in the Nittany AI Challenge 2024</strong> for innovative application of artificial intelligence in sustainability and agriculture.
+      </p>
+    </td>
+  </tr>
+  
+  
